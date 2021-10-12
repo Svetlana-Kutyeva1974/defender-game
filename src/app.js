@@ -1,8 +1,10 @@
 const characters = [
-  {name: 'мечник', health: 10},
-  {name: 'маг', health: 100},
-  {name: 'маг', health: 0},
-  {name: 'лучник', health: 0},
+  { name: 'мечник', health: 10 },
+  { name: 'маг', health: 100 },
+  { name: 'маг', health: 0 },
+  { name: 'лучник', health: 0 },
 ];
 
-const alive = characters.filter(item => item.health > 0);
+const alive = characters.filter((item) => item.health > 0);
+
+alive[0].health = 0;//изменили для корректности работы eslint
